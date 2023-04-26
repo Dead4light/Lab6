@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  h1{
+  text-align: center;
+}
+
+.image__links{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image img{
+  width: 640px;
+  height: 400px;
+}
+</style>
+<body>
+  <div class="links">
+    <map name="map1">
+      <area shape="poly" coords="4,518,301,5,591,519" href="file:///D:/%D0%BB%D0%B0%D0%B1%D0%B8%20%D0%BF%D0%BE%20%D0%B2%D0%B5%D0%B1/5.1.html" title="Про мене">
+      </map>
+      <map name="map2">
+        <area shape="poly" coords="75,253,254,1,437,257,256,505" href="file:///D:/%D0%BB%D0%B0%D0%B1%D0%B8%20%D0%BF%D0%BE%20%D0%B2%D0%B5%D0%B1/5.2.html" title="Гіперпосилання">
+        </map>
+        <map name="map3">
+          <area shape="circle" coords="969,773,1095" href="https://uk.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%BB%D1%96%D0%B2%D0%BA%D0%B0" title="Батьківщина">
+          </map>
+      <div class="image__links">
+        <div class="image"><img src="Прямокутник.jpg"  usemap="#map1"></div>
+        <div class="image"><img src="Круг.jpg" usemap="#map2"></div>
+        <div class="image"><img src="Трикутник.jpg" usemap="#map3"></div>
+      </div>
+  </div>
+</body>
+</html>
